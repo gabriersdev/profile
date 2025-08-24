@@ -2,46 +2,31 @@
 
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import {
-  Github,
-  Instagram,
-  Linkedin,
-  Rocket,
-  Twitter,
-  User,
-  Youtube
-} from 'lucide-react'
-import { MenuButton } from './MenuButton'
+  BsGithub,
+  BsLinkedin,
+  BsPerson,
+  BsGlobe
+} from 'react-icons/bs'
+import {MenuButton} from './MenuButton'
 
 const socialLinks = [
   {
     name: 'github',
-    url: 'https://github.com/diego3g',
-    icon: <Github size={14} />
-  },
-  {
-    name: 'instagram',
-    url: 'https://instagram.com/dieegosf',
-    icon: <Instagram size={14} />
+    url: 'https://github.com/gabriersdev',
+    // @ts-ignore
+    icon: <><BsGithub size={14}/></>
   },
   {
     name: 'linkedin',
-    url: 'https://www.linkedin.com/in/diego-schell-fernandes/',
-    icon: <Linkedin size={14} />
+    url: 'https://www.linkedin.com/in/gabrielmpribeiro',
+    // @ts-ignore
+    icon: <><BsLinkedin size={14}/></>
   },
   {
-    name: 'rocketseat',
-    url: 'https://www.rocketseat.com.br/',
-    icon: <Rocket size={14} />
-  },
-  {
-    name: 'twitter',
-    url: 'https://twitter.com/dieegosf',
-    icon: <Twitter size={14} />
-  },
-  {
-    name: 'youtube',
-    url: 'https://www.youtube.com/@rocketseat',
-    icon: <Youtube size={14} />
+    name: 'portfolio',
+    url: 'https://www.gabriel.lts.app.br',
+    // @ts-ignore
+    icon: <><BsGlobe size={14}/></>
   },
 ]
 
@@ -49,9 +34,10 @@ export function SocialLinksMenuButton() {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger aria-label="Redes sociais">
-        <MenuButton icon={User} />
+         {/*@ts-ignore*/}
+        <MenuButton icon={BsPerson}/>
       </DropdownMenu.Trigger>
-
+      
       <DropdownMenu.Portal>
         <DropdownMenu.Content side='right' className="bg-[#2a273f] z-10 flex flex-col rounded-lg overflow-auto">
           {socialLinks.map(socialItem => {
@@ -69,7 +55,7 @@ export function SocialLinksMenuButton() {
               </DropdownMenu.Item>
             )
           })}
-          <DropdownMenu.Arrow className="fill-[#2a273f]" />
+          <DropdownMenu.Arrow className="fill-[#2a273f]"/>
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>

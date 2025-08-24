@@ -16,3 +16,17 @@ code .line::before {
   text-align: right;
   color: #8F8CA8;
 }
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+* {
+    font-size: 16px !important;
+}
+
+pre * {
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+}

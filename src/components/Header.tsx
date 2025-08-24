@@ -14,7 +14,7 @@ export function Header() {
         <button type="button" className="w-3 h-3 bg-[#61C554] rounded-full" />
       </div>
       <span className="text-[#908caa] text-sm">
-        {openFileName && `${openFileName.title} — `}fala-dev
+        {openFileName && `${openFileName.title} - `}fala-dev
       </span>
       <div className="w-14">&nbsp;</div>
     </div>
