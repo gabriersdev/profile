@@ -33,9 +33,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${inter.className} ${jetBrains.className} select-none`}>
     <head/>
-    <body className="bg-[#7F7FD5] bg-app">
-    <div className="z-10 relative h-screen p-20 flex items-center justify-center">
-      <div className="bg-[#232135] overflow-hidden border border-[#72707D] w-full max-w-[1480px] aspect-video shadow-md shadow-black/20 rounded-lg grid grid-rows-layout">
+    <body className="bg-[#6B73FF] bg-app">
+    <div className="z-10 relative h-screen flex items-center justify-center p-4 md:p-20">
+      <div className="bg-[#232323] overflow-hidden border border-white/75 w-full max-w-[1480px] aspect-video shadow-md shadow-black/20 rounded-lg grid grid-rows-layout">
         <OpenFilesProvider>
           <Header/>
           
