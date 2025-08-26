@@ -1,8 +1,9 @@
 import '../styles/global.css'
 
-import {Inter, JetBrains_Mono} from 'next/font/google'
+import {Inter, Inter_Tight, JetBrains_Mono} from 'next/font/google'
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({subsets: ['latin']});
+const interTight = Inter_Tight({subsets: ['latin']});
 const jetBrains = JetBrains_Mono({subsets: ['latin']});
 
 import {Menu} from '@/components/Menu'
@@ -31,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={`${inter.className} ${jetBrains.className} select-none`}>
+    <html lang="pt-BR" className={`${inter.className} ${interTight.className} ${jetBrains.className} select-none`}>
     <head/>
     <body className="bg-[#6B73FF] bg-app">
     <div className="z-10 relative h-screen flex items-center justify-center p-4 md:p-20">

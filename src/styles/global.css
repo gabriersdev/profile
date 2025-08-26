@@ -35,3 +35,11 @@ pre *,
 .bg-app {
     background-image: linear-gradient(to left, #6B73FF, #6B73FF, #6B73FF);
 }
+
+.font-inter {
+    font-family: "Inter", sans-serif !important;
+}
+
+.font-inter-tight {
+    font-family: "Inter Tight", "Inter", sans-serif !important;
+}
