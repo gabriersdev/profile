@@ -16,8 +16,8 @@ import React from "react";
 
 export const metadata = {
   title: {
-    default: 'Diego Fernandes',
-    template: '%s | Diego Fernandes'
+    default: 'Gabriel Ribeiro - Perfil',
+    template: '%s | Gabriel Ribeiro',
   },
   robots: {
     index: true,
@@ -36,11 +36,11 @@ export default function RootLayout({
     <head/>
     <body className="bg-[#6B73FF] bg-app">
     <div className="z-10 relative h-screen flex items-center justify-center p-4 md:p-20">
-      <div className="bg-[#232323] overflow-hidden border border-white/75 w-full max-w-[1480px] aspect-video shadow-md shadow-black/20 rounded-lg grid grid-rows-layout">
+      <div className="bg-[#232323] overflow-y-scroll border border-white/75 w-full max-w-[1480px] min-h-[80vh] my-4 aspect-video shadow-md shadow-black/20 rounded-lg grid grid-rows-layout">
         <OpenFilesProvider>
           <Header/>
           
-          <div className="grid grid-cols-editor max-h-full">
+          <div className="grid md:grid-cols-editor max-h-full">
             <Menu/>
             <Explorer/>
             

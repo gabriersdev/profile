@@ -1,24 +1,24 @@
 "use client";
 
-import { useOpenFiles } from "@/hooks/useOpenFiles";
+import {useOpenFiles} from "@/hooks/useOpenFiles";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { explorerFiles } from "../Explorer";
-import { CloseFileButton } from "./CloseFileButton";
+import {usePathname} from "next/navigation";
+import {explorerFiles} from "../Explorer";
+import {CloseFileButton} from "./CloseFileButton";
 
 export function OpenFilesTabs() {
-  const { openFiles } = useOpenFiles();
+  const {openFiles} = useOpenFiles();
   const pathName = usePathname();
-
+  
   return (
     <div className="h-9 text-transparent font-normal flex flex-row">
       {openFiles?.map((openFile, index) => {
         const isActive = pathName === openFile;
-
+        
         const file = explorerFiles[openFile];
         
         if (!file) {
-          return <></>;
+          return <div key={index} className={"text-white"}>File not found :/</div>;
         }
         
         return (
@@ -27,17 +27,17 @@ export function OpenFilesTabs() {
             data-active={isActive}
             className="h-full flex items-center gap-[6px] pl-[10px] hover:bg-[#817c9c26] hover:text-[#908caa] data-[active=true]:bg-[#817c9c14] data-[active=true]:text-white"
           >
-            <Link href={openFile} className="flex gap-[6px] items-center ">
+            <Link href={openFile} className="flex gap-[6px] items-center " title={file.title}>
               <span className="text-white">{file.icon}</span>
               <span
                 data-active={isActive}
-                className="text-[#908caa] data-[active=true]:text-[#e0def4] "
+                className="text-[#908caa] data-[active=true]:text-[#e0def4] line-clamp-1"
               >
                 {file.title}
               </span>
             </Link>
             <span className="w-7 flex items-center">
-              <CloseFileButton isActive={isActive} index={index} />
+              <CloseFileButton isActive={isActive} index={index}/>
             </span>
           </div>
         );

@@ -1,46 +1,21 @@
 "use client"
 
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
-import {
-  BsGithub,
-  BsLinkedin,
-  BsPerson,
-  BsGlobe
-} from 'react-icons/bs'
-import {MenuButton} from './MenuButton'
-
-const socialLinks = [
-  {
-    name: 'github',
-    url: 'https://github.com/gabriersdev',
-    // @ts-ignore
-    icon: <><BsGithub size={14}/></>
-  },
-  {
-    name: 'linkedin',
-    url: 'https://www.linkedin.com/in/gabrielmpribeiro',
-    // @ts-ignore
-    icon: <><BsLinkedin size={14}/></>
-  },
-  {
-    name: 'portfolio',
-    url: 'https://www.gabriel.lts.app.br',
-    // @ts-ignore
-    icon: <><BsGlobe size={14}/></>
-  },
-]
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import {BsPerson,} from 'react-icons/bs';
+import {MenuButton} from './MenuButton';
+import {links} from "@/resources/resources"
 
 export function SocialLinksMenuButton() {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger aria-label="Redes sociais">
-         {/*@ts-ignore*/}
+        {/*@ts-ignore*/}
         <MenuButton icon={BsPerson}/>
       </DropdownMenu.Trigger>
       
       <DropdownMenu.Portal>
         <DropdownMenu.Content side='right' className="bg-[#2a273f] z-10 flex flex-col rounded-lg overflow-auto">
-          {socialLinks.map(socialItem => {
+          {links.map(socialItem => {
             return (
               <DropdownMenu.Item key={socialItem.url} className="outline-none">
                 <a

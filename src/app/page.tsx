@@ -6,7 +6,7 @@ export const metadata = {
 }
 
 export default async function Home() {
-  const README = await fetch(`https://raw.githubusercontent.com/gabriersdev/gabriersdev/master/README.md`);
+  const README = await fetch(`https://raw.githubusercontent.com/gabriersdev/gabriersdev/refs/heads/main/README.md`);
   
   let markdown = await README.text();
   if (markdown) markdown = markdown.replace(/<\!\--.*--\>\s*/g, '');

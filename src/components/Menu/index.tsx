@@ -4,7 +4,7 @@ import {SocialLinksMenuButton} from './SocialLinksMenuButton'
 
 export function Menu() {
   return (
-    <div className="flex flex-col justify-between">
+    <div className="hidden md:flex flex-col justify-between">
       <div className="flex flex-col">
         <MenuButton icon={Files} isActive/>
         <MenuButton icon={Search}/>

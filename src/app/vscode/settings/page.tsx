@@ -6,5 +6,5 @@ export const metadata = {
 
 export default async function Settings() {
   {/* @ts-expect-error Server Component */}
-  return <GistContent gistUrl="https://gist.githubusercontent.com/diego3g/b1b189063d21b96d6144ca896755be64/raw/765a17e8c439d25b1866c1322437a6da2b9e4be8/settings.json" />
+  return <GistContent gistUrl="https://gist.githubusercontent.com/gabriersdev/31874adc29f8c32cddb5be776527e643/raw/5523fd7f21935b54c64212494fc4ef9070f518f5/vs-code-settings.json" />
 }

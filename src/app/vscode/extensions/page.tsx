@@ -6,5 +6,5 @@ export const metadata = {
 
 export default async function Extensions() {
   // @ts-ignore
-  return <GistContent gistUrl="https://gist.githubusercontent.com/diego3g/6886b0928e422ba674cc67d6dac5f3e7/raw/bd30aa71c9e58bee6da786b90b8e44d6fce0dffd/extensions.json"/>
+  return <GistContent gistUrl="https://gist.githubusercontent.com/gabriersdev/7ec88ddde489c9e39d30d350e6d16d01/raw/02aafc0231859bda5601eec204e574052ca06e9b/vs-code-extensions.txt"/>
 }
