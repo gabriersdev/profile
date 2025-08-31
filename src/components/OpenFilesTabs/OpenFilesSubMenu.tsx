@@ -31,10 +31,10 @@ export function OpenFilesSubMenu() {
             <Link href={openFile}>
               <div
                 data-active={isCurrentActive}
-                className={`flex text-sm items-center gap-2 text-[#908caa] data-[active=true]:text-[#E0DEF2]`}
+                className={`flex items-center gap-2 text-[#908caa] data-[active=true]:text-[#E0DEF2]`}
               >
                 {file.icon}
-                {file.title}
+                <span className={"text-[16px]"}>{file.title}</span>
               </div>
             </Link>
           </div>

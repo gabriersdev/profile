@@ -22,7 +22,7 @@ export function SocialLinksMenuButton() {
                   href={socialItem.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-[#E0DEF2] flex items-center gap-2 text-sm px-4 py-3 hover:bg-[#454066]"
+                  className="text-[#E0DEF2] flex items-center gap-2 px-4 py-3 hover:bg-[#454066]"
                 >
                   {socialItem.icon}
                   {socialItem.name}

@@ -13,10 +13,8 @@ export function Menu() {
         <MenuButton icon={Puzzle}/>
         <MenuButton icon={Monitor}/>
         <MenuButton icon={FlaskConical}/>
-      </div>
-      <div className="flex flex-col items-center">
-        <SocialLinksMenuButton/>
         <MenuButton icon={Cog}/>
+        <SocialLinksMenuButton/>
       </div>
     </div>
   )
