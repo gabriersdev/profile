@@ -1,7 +1,7 @@
 'use client';
 
 import * as Collapsible from '@radix-ui/react-collapsible';
-import { ChevronDown, ChevronRight, Folder as FolderIcon } from 'lucide-react';
+import { ChevronDown, ChevronRight } from 'lucide-react';
 import { ReactNode, useState } from 'react';
 
 interface SubMenuProps {
